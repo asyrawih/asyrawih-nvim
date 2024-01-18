@@ -96,7 +96,7 @@ local plugins = {
   {
     "simeji/winresizer",
     version = "*",
-    lazy = false
+    lazy = false,
   },
 
   -- To make a plugin not be loaded
