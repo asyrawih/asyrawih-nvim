@@ -12,6 +12,17 @@ M.general = {
       end,
       "formatting",
     },
+    ["vs"] = {
+      "<cmd> vsplit<cr>",
+      "split window as vertical",
+      opts = { nowait = true }
+    },
+
+    ["hs"] = {
+      "<cmd> split<cr>",
+      "split window as horihontal",
+      opts = { nowait = true}
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },
