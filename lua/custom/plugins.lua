@@ -91,7 +91,12 @@ local plugins = {
     "akinsho/git-conflict.nvim",
     version = "*",
     config = true,
-    ft = {'*'}
+    ft = { "*" },
+  },
+  {
+    "simeji/winresizer",
+    version = "*",
+    lazy = false
   },
 
   -- To make a plugin not be loaded
