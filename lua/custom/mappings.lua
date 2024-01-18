@@ -8,20 +8,20 @@ M.general = {
     --  format with conform
     ["<leader>fm"] = {
       function()
-        require("conform").format()
+        require("conform").format { async = true, lsp_fallback = true }
       end,
       "formatting",
     },
     ["vs"] = {
       "<cmd> vsplit<cr>",
       "split window as vertical",
-      opts = { nowait = true }
+      opts = { nowait = true },
     },
 
     ["hs"] = {
       "<cmd> split<cr>",
       "split window as horihontal",
-      opts = { nowait = true}
+      opts = { nowait = true },
     },
   },
   v = {
@@ -54,7 +54,5 @@ M.lspconfig = {
     ["gh"] = { "<cmd>Lspsaga finder tyd+ref+def+imp<CR>" },
   },
 }
-
-
 
 return M
