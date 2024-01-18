@@ -90,7 +90,8 @@ local plugins = {
   {
     "akinsho/git-conflict.nvim",
     version = "*",
-    config = true
+    config = true,
+    ft = {'*'}
   },
 
   -- To make a plugin not be loaded
