@@ -72,6 +72,7 @@ local plugins = {
     },
     config = function()
       require "custom.configs.neogit"
+      require "custom.configs.diffview"
     end,
     event = { "CmdlineEnter" },
     lazy = false,
@@ -98,6 +99,13 @@ local plugins = {
     version = "*",
     lazy = false,
   },
+
+  {
+    'edolphin-ydf/goimpl.nvim',
+    config = function ()
+      require "telescope".load_extension("goimpl")
+    end
+  }
 
   -- To make a plugin not be loaded
   -- {

@@ -45,6 +45,7 @@ M.tabufline = {
 M.telescope = {
   n = {
     ["<leader>tt"] = { "<cmd> Telescope live_grep <CR>", "telescope live grep" },
+    ["<leader>im"] = { "<cmd> lua require'telescope'.extensions.goimpl.goimpl{}<CR>", "Telescope Go Impl" },
   },
 }
 
