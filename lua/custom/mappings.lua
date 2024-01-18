@@ -51,8 +51,8 @@ M.telescope = {
 M.lspconfig = {
   n = {
     ["<leader>o"] = { "<cmd> Lspsaga outline<CR>", "lsp saga outline" },
-    ["gh"] = {"<cmd>Lspsaga finder tyd+ref+def+imp<CR>"},
-  }
+    ["gh"] = { "<cmd>Lspsaga finder tyd+ref+def+imp<CR>" },
+  },
 }
 
 
