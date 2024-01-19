@@ -15,6 +15,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   group = format_sync_grp,
 })
 
--- enalbe window resizer 
+-- enalbe window resizer
 vim.g.winresizer_enable = 1
 vim.g.winresizer_start_key = "<C-w>r"

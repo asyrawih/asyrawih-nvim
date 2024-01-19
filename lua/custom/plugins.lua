@@ -75,7 +75,6 @@ local plugins = {
       require "custom.configs.diffview"
     end,
     event = { "CmdlineEnter" },
-    lazy = false,
   },
   {
     "nvimdev/lspsaga.nvim",
