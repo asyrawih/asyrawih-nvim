@@ -129,19 +129,9 @@ M.lspconfig = {
   -- See `<cmd> :help vim.lsp.*` for documentation on any of the below functions
 
   n = {
-    ["gD"] = {
-      function()
-        vim.lsp.buf.declaration()
-      end,
-      "LSP declaration",
-    },
+    ["gD"] = { "<cmd>Lspsaga goto_definition<CR>", "LSP declaration" },
 
-    ["gd"] = {
-      function()
-        vim.lsp.buf.definition()
-      end,
-      "LSP definition",
-    },
+    ["gd"] = { "<cmd>Lspsaga peek_definition<CR>", "LSP definition" },
 
     ["K"] = {
       function()
