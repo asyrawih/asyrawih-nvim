@@ -18,3 +18,16 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 -- enalbe window resizer
 vim.g.winresizer_enable = 1
 vim.g.winresizer_start_key = "<C-w>r"
+
+local function initNeogitColorSchema()
+  vim.cmd [[
+     hi default NeogitDiffAddHighlight guifg=#00FF00 guibg=#003300
+     hi default NeogitDiffAdd guifg=#00FF00 guibg=#003300
+
+     hi default NeogitDiffDeleteHighlight guifg=#FF0000 guibg=#330000
+     hi default NeogitDiffDelete guifg=#FF0000 guibg=#330000
+  ]]
+end
+
+initNeogitColorSchema()
+
