@@ -98,11 +98,28 @@ local plugins = {
   },
 
   {
-    'edolphin-ydf/goimpl.nvim',
-    config = function ()
-      require "telescope".load_extension("goimpl")
-    end
-  }
+    "edolphin-ydf/goimpl.nvim",
+    config = function()
+      require("telescope").load_extension "goimpl"
+    end,
+  },
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    config = function()
+      require "custom.configs.nvim-dap"
+    end,
+    event = { "CmdlineEnter" },
+  },
+  {
+    "mfussenegger/nvim-dap",
+    config = function(_, opts)
+      print(opts)
+    end,
+  },
+  {
+    "rcarriga/nvim-dap-ui",
+    event= {"LspAttach"}
+  },
 
   -- To make a plugin not be loaded
   -- {
